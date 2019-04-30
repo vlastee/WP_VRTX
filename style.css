@@ -12,3 +12,53 @@ header{
     height: 100px;
 }
 
+.navbar-custom {
+    background-color: #252727;
+    background-image: url("images/1.jpg");
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background-size: cover;
+}
+
+.navbar-custom:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgb(159, 189, 112);
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: rgb(93, 139, 112);
+    border-bottom: 3px solid rgb(43, 65, 52);
+    text-transform: uppercase;
+}
+
+ul{
+    color: rgb(0, 252, 101);
+}
+
+
+
+.topnav a:hover {
+    border-bottom: 3px solid rgb(43, 65, 52);
+    
+}
+
+
+
+
+.custom-toggler {
+    border-color: rgb(185, 129, 23);
+    border-width: thick;
+}
