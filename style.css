@@ -1,6 +1,14 @@
 /*
-Theme Name: Test Theme 
+Theme Name: VRTX Theme 
 Author: Vlastee
+*/
+
+/*               _____FONTS_____
+    font-family: 'Orbitron', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
 */
 body {
     background: #e7e7e7;
@@ -12,37 +20,149 @@ header{
     height: 100px;
 }
 
-.navbar-custom {
-    background-color: #252727;
-    background-image: url("images/1.jpg");
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #020202;
+    background-image: url("images/grass-black-and-white.jpg");
+    /*opacity: 0.5;
+    filter: alpha(opacity=50); */
     background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.menu-item a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 120%;
 }
 
 .navbar-custom:hover {
     opacity: 0.7;
     filter: alpha(opacity=70);
+    color: rgba(255, 241, 45, 0.952);
+}
+
+.navbar-large{
+    display: flex;
+    visibility: visible;
+}
+.navbar-custom{
+    visibility: hidden;
+    display: none;
+}
+
+.logo{
+    background: url("images/VTXandTEXT\(vectorised\).svg") no-repeat center;
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gradient-top-background{
+    height: 100%;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.336) 10%, rgba(64,64,110,0) 53%, rgba(0,212,255,0) 100%); 
 }
 
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgb(159, 189, 112);
+    color: rgba(255, 241, 45, 0.952);
+    text-align: center;
 }
 
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
+    
+    text-align: center;
+    width: 150pt;
+    color: rgb(255, 255, 255);
 }
 
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: rgb(93, 139, 112);
-    border-bottom: 3px solid rgb(43, 65, 52);
+    text-align: center;
+    color: rgba(255, 241, 45, 0.952);
+    border-bottom: 3px solid rgb(255, 241, 45);
     text-transform: uppercase;
 }
+
+.navbar-large{
+    
+}
+
+.all-items{
+    padding-top: 35px;
+}
+
+.navbar-large .all-items ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.navbar-large .nav-item.active .nav-link,
+.navbar-large .nav-item:hover .nav-link{
+    text-align: center;
+    color: rgba(255, 241, 45, 0.952);
+    border-bottom: 3px solid rgb(255, 241, 45);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-large .nav-link{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.all-items .topnav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#main-menu .topnav {
+    margin-left: 20pt;
+}
+
+#main-menu .topnav .menu-item{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#main-menu .topnav .menu-item:hover{
+    
+}
+
+.navbar-brand{
+    
+}
+
+
+.container-title{
+
+}
+
+#navbarNavDropdown{
+}
+
+
+.branding-logo{
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
 
 ul{
     color: rgb(0, 252, 101);
@@ -62,3 +182,42 @@ ul{
     border-color: rgb(185, 129, 23);
     border-width: thick;
 }
+
+@media(min-width:768px) {
+    .navbar-large{
+        display: flex;
+        visibility: visible;
+    }
+    .navbar-custom{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    .topnav {
+
+    }
+    .logo {
+        display: none;
+    }
+    .d-flex .navbar-large {
+        display: none;
+    }
+    .navbar-large{
+        display: none;
+        visibility: hidden;
+    }
+    .navbar-custom{
+        visibility: visible;
+        display: flex;
+    }
+    .header {
+        width: 100%;
+        height: 100%;
+    }
+    .navbar-brand a{
+        background-image: url("images/VTXandTEXT\(vectorised\).svg");
+    }
+}
+
