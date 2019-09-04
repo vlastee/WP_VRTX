@@ -1,6 +1,7 @@
 <?php get_header();?>
+<div id="background-page">
 
-<div class="container pt-5 pb-5">
+    <div class="container pt-5 pb-5" >
 
         <h1><?php the_title();?></h1>
 
@@ -9,6 +10,6 @@
             <?php the_content();?>
         
         <?php endwhile; endif;?>
+    </div>
 </div>
-
 <?php get_footer();?>

@@ -28,6 +28,10 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+li {
+    color: #020202;
+}
+
 .header {
     background-color: #020202;
     background-image: url("images/grass-black-and-white.jpg");
@@ -224,7 +228,7 @@ ul{
 
 .members-map-background {
     background-image: url("images/membersMap.jpg");
-    color: #000;
+    color: rgb(255, 0, 0);
     height: 180px;
     display: flex;
     flex-direction: column;
@@ -235,9 +239,16 @@ ul{
     background-image: url("images/map-marker-alt-solid.svg");
     width: 50px;
     background-repeat: no-repeat;
-    color: red;
     height: 50px;
     display: flex;
+    padding-bottom: 10px;
+    opacity: 0.5;
+}
+
+#background-page{
+    background: rgb(129,26,26);
+    background: linear-gradient(0deg, rgba(129,26,26,1) 0%, rgba(85,41,41,1) 16%, rgba(83,83,83,1) 51%);
+    color: #e7e7e7;
 }
 
 .members-map-text {
@@ -247,11 +258,73 @@ ul{
     font-size: 150%;
     text-align: center;
     display: flex;
+    padding-top: 20px;
+    opacity: 0.5;
     
 }
 
 .custom-underline{
     display: flex;
-    height: 5px;
+    padding-top: 50px;
+    width: 80px;
+    height: 20px;
     border-bottom: 3px solid red;
+    opacity: 0.5;
+}
+
+.footer-block{
+    background-color: rgb(19, 13, 13);
+    height: 100%;
+    width: 100%; 
+}
+
+/* #socials{
+    height: 100px;
+    width: 200px
+} */
+
+.underline-socials{
+    width: 100%;
+    height: 20px;
+    border-bottom: 2px solid rgb(49, 49, 49);
+    opacity: 0.5;
+}
+
+.text-socials{
+    color: rgb(49, 49, 49);
+}
+
+
+.facebook{
+    background-image: url("images/facebook-square-brands.svg");
+    background-repeat: no-repeat;
+}
+.instagram{
+    background-image: url("images/instagram-brands.svg");
+    background-repeat: no-repeat;
+}
+.tumblr{
+    background-image: url("images/tumblr-square-brands.svg");
+    background-repeat: no-repeat;
+}
+.twitter{
+    background-image: url("images/twitter-square-brands.svg");
+    background-repeat: no-repeat;
+}
+.youtube{
+    background-image: url("images/youtube-square-brands.svg");
+    background-repeat: no-repeat;
+}
+.discord{
+    background-image: url("images/discord-brands.svg");
+    background-repeat: no-repeat;
+}
+
+.bottom-underline{
+    width: 100%;
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.owner-info a{
+    color: rgb(97, 29, 29);
 }

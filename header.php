@@ -13,6 +13,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!DOCTYPE html>
 <html>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Orbitron:500,900|Roboto:500&display=swap" rel="stylesheet"> 
     <head>
 
